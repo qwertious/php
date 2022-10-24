@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <template id="document">
+        <template id="webtemplate">
             <header>
                 <h1>QWERTIOUS</h1>
             </header>
@@ -18,5 +18,20 @@
                 <p>Copyright 2022 Qwertious</p>
             </footer>
         </template>
+        <script>
+            customElements.define(
+                "my-paragraph",
+                class extends HTMLElement {
+                    constructor() {
+                        super();
+                        let template = document.getElementById("my-paragraph");
+                        let templateContent = template.content;
+
+                        const shadowRoot = this.attachShadow({ mode: "open" });
+                        shadowRoot.appendChild(templateContent.cloneNode(true));
+                    }
+                }
+            );
+        </script>
     </body>
 </html>
