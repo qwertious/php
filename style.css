@@ -29,3 +29,10 @@ div {
 .two {
     background-color: #0040c0;
 }
+nav {
+    white-space: nowrap;
+   
+}
+nav > * {
+        display: inline-block;
+    }
