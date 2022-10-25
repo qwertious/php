@@ -31,8 +31,8 @@ div {
 }
 nav {
     white-space: nowrap;
-   
+    
 }
 nav > * {
-        display: inline-block;
-    }
+    display: inline-block;
+ }
