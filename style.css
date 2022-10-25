@@ -31,8 +31,12 @@ div {
 }
 nav {
     white-space: nowrap;
-    
+    height: 64px;
 }
 nav > * {
     display: inline-block;
  }
+ footer {
+    white-space: nowrap;
+    height: 64px;
+}
